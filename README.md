@@ -1,3 +1,5 @@
 
 ## My Landing Website - Adopt Stray puppies! Dont Buy! 
-- Implement basic CSS to style this website
+  Please visit https://earnest-travesseiro-1c2067.netlify.app/ for more information!
+
+Enjoy!!
