@@ -31,6 +31,17 @@ nav>ul>li {
   display: inline-block;
 }
 
+nav>span>img {
+  height: 32px;
+  width: auto;
+  padding: 8px;
+}
+
+nav>span {
+  display: flex;
+  align-items: center;
+}
+
 header {
   text-align: center;
   color: white;
@@ -58,13 +69,6 @@ header p {
   margin: 0;
 }
 
-.logo {
-  position: absolute;
-  top: 2px;
-  left: 16px;
-  width: 30px;
-}
-
 img {
   width: 80%;
   display: block;
@@ -83,6 +87,12 @@ h2 {
 
 h3 {
   text-align: center;
+}
+
+#puppy-video .flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 iframe {
@@ -104,14 +114,14 @@ textarea {
   display: block;
 }
 
-#form-section {
+#membership-form {
   background-color: #333333;
   color: white;
   padding: 8px;
   margin-top: 16px;
 }
 
-#form-section form {
+#membership-form form {
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
@@ -127,4 +137,58 @@ button[type="submit"] {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+}
+
+/* for tablet and desktop */
+@media only screen and (min-width: 768px) {
+  #adoption-process>.flex-container {
+    display: flex;
+    align-items: center;
+  }
+
+  #adoption-process>.flex-container figure {
+    margin-left: auto;
+  }
+
+  #adoption-process>.flex-container figure img {
+    height: 300px;
+    width: 400px;
+  }
+
+  #adoption-process>.flex-container figcaption {
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  #adoption-process>.flex-container.row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  #adoption-process>.flex-container.row-reverse p {
+    margin-left: 32px;
+  }
+
+  #adoption-process>.flex-container.row-reverse figure {
+    margin-left: 40px;
+    min-width: 320px;
+  }
+
+  iframe {
+    max-width: 480px;
+  }
+
+  #form-section .grid-container {
+    display: flex;
+    gap: 16px;
+  }
+
+  #form-section .grid-container>div {
+    width: 25%;
+  }
+
+  #form-section .grid-container img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+  }
 }
